@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Discus It!</title>
+<link rel="stylesheet" type="text/css" href="css/style-2.css">
+<link href="https://fonts.googleapis.com/css?family=Carter+One|Orbitron:900|Pacifico" rel="stylesheet">
+
+
+<style>
+body{
+	background:rgba(198,198,198,1.00);
+	}
+	
+</style>
+</head>
+
+<body>
+	<div class="header">
+        <div class="heading1">
+        	<h2>DiscusIt.</h2>
+        </div>
+        <div class="heading2">    
+            <form id="search-form">
+             <input id="snackbar" type="text" onFocus="func1();" onBlur="func2();" name="search" placeholder="Search..">
+             <input id="search-btn" type="submit" value="GO">
+            </form>
+            <ul id="nav">
+                <li><a href="#" >Answers</a></li>
+                <li><a href="#" >Notification</a></li>
+                <li class="dropdown"><a "javascript:void(0)" >Shubham</a>
+                <div class="dropdown-content">
+                <a href="#">Profile</a>
+                <a href="#">Your Content</a>
+                <a href="#">Setting</a>
+                <a href="#">Logout</a>
+                </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="trends fadeInDown animated">
+            <div class="card">
+            	<h3>#Trending</h3>
+                <ul>
+                	<li># Shaktiman</li>
+                	<li># SGSITS Result</li>
+                	<li># Jolly LLB-2</li>
+                    <li># Pointers</li>
+                </ul>
+            </div>
+        </div>
+
+        
+        <div class="stories fadeInDown animated">
+            <div class="card">
+                <h3>Top Stories for You</h3>
+                    <ul>
+                    <li>Will SGSITS conduct Aayaam this year ??</li>
+                    <li>Salman Khan kab shadi krega</li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+    
+    
+    <div class="footer">
+    <h3>Answers to all your Questions</h3>
+    </div>
+    
+    <div id="cover"></div>
+
+<script type="text/javascript">
+
+
+
+
+function func1(){
+	//document.getElementById("search-form").style.width="100%";
+	//document.getElementById("nav").style.display ="none";
+	document.getElementById("cover").style.display="block";
+	document.getElementById("snackbar").style.background="yellow";
+
+	document.getElementsByClassName("header").style.zIndex="10000";
+		}
+function func2(){
+	//document.getElementById("search-form").style.width="30%";
+	//document.getElementById("nav").style.display ="block";
+	document.getElementById("cover").style.display="none";
+	document.getElementById("snackbar").style.background="white";
+	}
+</script> 
+</body>
+</html>

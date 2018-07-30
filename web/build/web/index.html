@@ -1,0 +1,382 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>index2</title>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Carter+One|Orbitron:900|Pacifico" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="css/style-new.css">
+<script text="text/javascript">
+	
+	function c1_1()
+	{
+		document.getElementById("n1").style.background="yellow";
+	}
+
+	
+	function c1_2()
+	{
+		document.getElementById("n1").style.background="white";
+	}
+	
+	
+	
+	function c2_1()
+	{
+		document.getElementById("srch-term").style.background="yellow";
+	}
+
+	
+	function c2_2()
+	{
+		document.getElementById("srch-term").style.background="white";
+	}
+	
+	
+	function c2_1()
+	{
+		document.getElementById("srch-term").style.background="yellow";
+	}
+
+	
+	function c2_2()
+	{
+		document.getElementById("srch-term").style.background="white";
+	}
+	
+		
+	function c3_1()
+	{
+		document.getElementById("n3").style.background="yellow";
+	}
+
+	
+	function c3_2()
+	{
+		document.getElementById("n3").style.background="white";
+	}
+		
+	function c4_1()
+	{
+		document.getElementById("n4").style.background="yellow";
+	}
+
+	
+	function c4_2()
+	{
+		document.getElementById("n4").style.background="white";
+	}
+		
+	function c5_1()
+	{
+		document.getElementById("n5").style.background="yellow";
+	}
+
+	
+	function c5_2()
+	{
+		document.getElementById("n5").style.background="white";
+		
+		var email = document.getElementById("n5").value;
+    var elength = email.length;
+    
+    var dot = email.lastIndexOf('.');
+    dot = elength - dot;
+
+    var at = email.indexOf('@');
+    var lastAt = email.lastIndexOf('@');
+
+    if (elength < 7 || at != lastAt || dot != 4 || dot < 0 || at < 0)
+    {
+        alert("email id is not valid");
+    }
+    		
+	function c6_1()
+	{
+		document.getElementById("n6").style.background="yellow";
+	}
+
+	function c6_2()
+	{
+		document.getElementById("n6").style.background="white";
+	}
+		
+		
+}
+		
+</script>
+	
+<style>
+/*****************************************/
+/*            Modal                      */
+/*****************************************/
+#login-form{
+	    border: 3px solid #f1f1f1;
+}
+
+/* Full-width inputs */
+.modal-input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+.modal-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+
+/* Extra style for the cancel button (red) */
+.cancelbtn {
+    width: 100%;
+    padding: 10px 18px;
+    background-color: #f44336;
+}
+
+/* Center the avatar image inside this container */
+.imgcontainer {
+    text-align: center;
+    margin: 24px 0 12px 0;
+}
+.modal-container{
+	padding:16px;
+	}
+
+/* Avatar image */
+img.avatar {
+    width: 40%;
+    border-radius: 50%;
+}
+
+/* Add padding to containers */
+
+
+/* The "Forgot password" text */
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 9991; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 20px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5px auto; /* 15% from the top and centered */
+    border: 1px solid #888;
+    width: 50%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    /* Position it in the top right corner outside of the modal */
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+/* Close button on hover */
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}	
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+@media (max-width:400px){
+.footer{
+	position:relative;
+	}
+}				
+</style>
+</head>
+
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">DiscusIt</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#" onClick="javascript:alert('You need to login');">Ask Question</a></li>
+            <li><a href="#" onClick="javascript:alert('You need to login');">Notification</a></li>
+            <li><a href="#" onclick="document.getElementById('id02').style.display='block'">Register</a></li>
+            <li><a href="#" onclick="document.getElementById('id01').style.display='block'">Login</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+    
+    <div class="body-start">
+    
+    
+    <div class="search-form col-lg-12">
+    <div class="form">
+    <form class="navbar-form" role="search">
+        <div class="input-group add-on">
+          <input class="form-control" placeholder="Search" name="srch-term" id="srch-term" type="text" onfocus="c2_1();" onblur="c2_2();">
+          <div class="input-group-btn">
+            <button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+          </div>
+        </div>
+      </form>
+    </div>  
+    </div>
+    
+    
+	</div>
+    <div id="id01" class="modal">
+      <span onclick="document.getElementById('id01').style.display='none'"
+    class="close" title="Close Modal">&times;</span>
+    
+    <form class="modal-content animate" id="login-form" action="verify_user" method="post">
+        <div class="imgcontainer">
+          <img src="images/icon-user-default.png" alt="Avatar" class="avatar">
+        </div>
+    
+        <div class="modal-container" >
+          <label><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" class="modal-input" required onfocus="c3_1();" onblur="c3_2();" id="n3">
+    
+          <label><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" class="modal-input" name="psw" required onfocus="c4_1();" onblur="c4_2();" id="n4">
+    
+          <button type="submit" class="modal-button">Login</button>
+        </div>
+    
+        <div class="modal-container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn modal-button">Cancel</button>
+        </div>
+      </form>
+    </div>
+	
+    <div id="id02" class="modal">
+      <span onclick="document.getElementById('id02').style.display='none'"
+    class="close" title="Close Modal">&times;</span>
+    
+    <form class="modal-content animate" id="login-form" action="register_user" method="post">
+        <div class="imgcontainer">
+          <img src="images/icon-user-default.png" alt="Avatar" class="avatar">
+        </div>
+    
+        <div class="modal-container">
+          
+           <label><b>Name</b></label>
+          <input type="text" pcrlaceholder="This is your Username" name="name" class="modal-input" required onfocus="c6_1();" onblur="c6_2();" id="n6">
+    
+            
+           <label><b>Email</b></label>
+          <input type="text" placeholder="This is your email_ID" name="uname" class="modal-input" required onfocus="c5_1();" onblur="c5_2();" id="n5">
+    
+          <label><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" class="modal-input" required onfocus="c1_1();" onblur="c1_2();" id="n1">
+    
+          
+          <button type="submit" class="modal-button">Register</button>
+        </div>
+    
+        <div class="modal-container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn modal-button">Cancel</button>
+        </div>
+      </form>
+    </div>
+    
+    <div class="trends fadeInDown animated col-lg-4 col-sm-12">
+            <div class="card">
+            	<h3>#Trending</h3>
+                <ul>
+                	<li># Shaktiman</li>
+                	<li># SGSITS Result</li>
+                	<li># Jolly LLB-2</li>
+                    <li># Pointers</li>
+                </ul>
+            </div>
+        </div>
+
+        
+        <div class="stories fadeInDown animated col-lg-8 col-sm-12">
+            <div class="card">
+                <h3>Top Stories</h3>
+                    <ul>
+                    <li>Will SGSITS conduct Aayaam this year ??</li>
+                    <li>Salman Khan kab shadi krega</li>
+                    </ul>
+            </div>
+        </div>
+    
+    
+	<div class="footer">
+    <h3>Answers to all your Questions</h3>
+    </div>
+	
+	<script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+    var modal1 = document.getElementById('id01');
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+    if (event.target == modal1) {
+        modal1.style.display = "none";
+    }
+}
+    
+    </script>
+</body>
+</html>
